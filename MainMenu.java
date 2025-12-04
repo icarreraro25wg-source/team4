@@ -15,9 +15,8 @@ public class MainMenu {
             System.out.println("1. Prepare train search request");
             System.out.println("2. Search trains");
             System.out.println("3. Purchase ticket");
-            System.out.println("4. Change seat");
-            System.out.println("5. Modify reservation");
-            System.out.println("6. Remove reservation");
+            System.out.println("4. Modify reservation (change seat/destination)");
+            System.out.println("5. Remove reservation");
             System.out.println("0. Exit");
             System.out.print("Choose option: ");
 
@@ -28,9 +27,8 @@ public class MainMenu {
                 case 1 -> system.prepareSearch(sc);
                 case 2 -> system.searchTrains();
                 case 3 -> system.purchaseTicket(sc);
-                case 4 -> system.changeSeat(sc);
-                case 5 -> system.modifyReservation(sc);
-                case 6 -> system.removeReservation(sc);
+                case 4 -> system.modifyReservation(sc);
+                case 5 -> system.removeReservation(sc);
                 case 0 -> System.out.println("Exiting program...");
                 default -> System.out.println("Invalid option.");
             }
